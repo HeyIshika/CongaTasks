@@ -1,0 +1,16 @@
+<div class="col-12" >
+<mat-card>
+  <h1>Input</h1>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Enter space separated numbers..." [formControl]="emailFormControl">
+    </mat-form-field>
+    <button mat-button color="primary"  (click)=" this.emailFormControl.valid && OnClickGetInflection()">Get the inflection point</button>
+    <button mat-button color="primary"  (click)=" this.emailFormControl.valid && OnClickGetMaxDrop()">Get max drop in price</button>
+  </form>
+  <h1>Output</h1>
+  <p>
+   {{ this.output }}
+  </p>
+</mat-card>
+</div>
